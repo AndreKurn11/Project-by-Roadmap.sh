@@ -47,8 +47,12 @@ header p {
 
 .navbar ul {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   font-size: 24px;
+}
+
+.navbar a:hover {
+  color: #4d4d4d;
 }
 
 .hero {
@@ -71,7 +75,6 @@ header p {
   font-size: 70px;
   font-style: italic;
 }
-
 
 /* Main */
 .navbar2 {
@@ -156,10 +159,59 @@ header p {
   justify-content: center;
   gap: 40px;
   margin: 100px 0 150px;
+  padding: 24px;
 }
 
+.pagination a:hover,
+.pagination a:active {
+  color: #ff7575;
+  border-top: 2px solid #ff7575;
+  font-weight: 600;
+}
 
 /* Footer */
 footer {
   border-top: 1px solid #4d4d4d;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 25px;
+  margin-bottom: 75px;
+}
+
+.footer div:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer div:nth-of-type(1) p:nth-of-type(1) {
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.footer div:nth-of-type(1) p:nth-of-type(2) {
+  font-weight: 600;
+  font-size: 19px;
+  background-color: #4699e0;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.footer div:nth-of-type(2) {
+  background-color: #4699e0;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer div:nth-of-type(2) img {
+  width: 20px;
+  height: 16px;
 }
